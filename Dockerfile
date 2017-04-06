@@ -16,5 +16,5 @@ COPY docker/* /usr/local/bin/
 USER jenkins
 
 VOLUME /home/jenkins
-
+USER root
 ENTRYPOINT ["/usr/local/bin/jenkins-slave.sh"]
